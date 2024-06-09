@@ -1,0 +1,23 @@
+
+.mobilebox {
+  padding: 20px;
+  font-size: 14px;
+}
+
+
+@media (min-width: 768px) {
+   .mobilebox {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .box {
+    display: none;
+  }
+  .box h2 {
+    display: none;
+  }
+  .listContainer {
+    display: none;
+  }
+}
