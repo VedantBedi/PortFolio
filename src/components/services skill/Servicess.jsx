@@ -35,16 +35,16 @@ const Services = () => {
       animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
-        <p>
-          I am a College Student who loves to code and learn new things. 
-          <br /> I am a Web Developer and an AI/ML enthusiast.
+      <p>
+          The walls between Art and Engineering exist only in our minds.
+          <br /> ~ Theo Jansen
         </p>
         <hr />
       </motion.div>
       <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <h1>
-            <motion.b whileHover={{color:"orange"}}>Skills</motion.b> 
+            <motion.b whileHover={{color:"orange"}}>Skills</motion.b>
           </h1>
           <button><motion.b whileHover={{color:"purple"}}>technologies used</motion.b> </button>
         </div>
@@ -56,7 +56,7 @@ const Services = () => {
         >
           <h2>Frontend Development</h2>
           <p>
-            Extremely familiar with HTML, CSS, and JavaScript. I have worked with React, Next.js I have also worked with Tailwind CSS and various other component libraries
+            Extremely familiar with HTML, CSS, and JavaScript. Have worked with React, Next.js . I have also worked with Tailwind CSS and various other component libraries
           </p>
         </motion.div>
         <motion.div
@@ -67,6 +67,9 @@ const Services = () => {
           <p>
             Familiar with Node.js and Express.js. Have working knowledge of MongoDB and SQL databases.
           </p>
+          <p>
+
+          </p>
         </motion.div>
         <motion.div
           className="box"
@@ -74,7 +77,7 @@ const Services = () => {
         >
           <h2>Machine Learning</h2>
           <p>
-            Extremely Familiar with Python and its libraries like NumPy, Pandas, Matplotlib, and Scikit-learn. Have worked with and implemented various different types of Neural networks from scratch. Including Projects like Facial-Emotion-Recognition, and Digit Recognition.
+            Extremely Familiar with Python and its libraries like NumPy, Pandas, Matplotlib, and Scikit-learn. Have worked with and implemented various different types of Networks from scratch. Including Projects like Facial-Emotion-Recognition, and Digit Recognition, uncertainity quantification.
           </p>
         </motion.div>
         <motion.div

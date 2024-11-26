@@ -22,8 +22,15 @@ const items = [
     title: "Portfolio Website",
     img: "public/portfolio.png",
     desc: "Built a Fully Responsive Portfolio Website using React.js and SCSS, including framer motion",
-  }
-  
+  },
+  {
+    id: 4,
+    title: "Gemini Clone",
+    img: "public/gemini.png",
+    desc: "Built a frontend clone of Gemini's Official Website using React.js and used the official gemini api for fetching data",
+  },
+
+
 ];
 
 const Single = ({ item }) => {
