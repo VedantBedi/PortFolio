@@ -6,27 +6,27 @@ const items = [
   {
     id: 1,
     title: "Nike Commerce Website Using React",
-    img: "public/nikeapp.png",
+    img: "/nikeapp.png",
     desc: "Built a Fully Responsive Frontend Clone of Nike's Official Website using React.js and tailwind css",
     link:"https://github.com/VedantBedi12/Nike-Clone-React",
   },
   {
     id: 2,
     title: "Facial-Emotion-Recognition",
-    img: "public/emotion.jpeg",
+    img: "/emotion.jpeg",
     desc: "Built a Facial Emotion Recognition Model using Convolutional Neural Networks and OpenCV",
     link:"",
   },
   {
     id: 3,
     title: "Portfolio Website",
-    img: "public/portfolio.png",
+    img: "/portfolio.png",
     desc: "Built a Fully Responsive Portfolio Website using React.js and SCSS, including framer motion",
   },
   {
     id: 4,
     title: "Gemini Clone",
-    img: "public/gemini.png",
+    img: "/gemini.png",
     desc: "Built a frontend clone of Gemini's Official Website using React.js and used the official gemini api for fetching data",
   },
 
