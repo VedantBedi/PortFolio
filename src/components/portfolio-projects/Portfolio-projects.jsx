@@ -5,30 +5,44 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [
   {
     id: 1,
+    title: "BoST Portal - Our College's Website for all things Tech",
+    img: "/Bost.png",
+    desc: "Built a responsive Website along with a team for our College's Board of Science of Technology",
+  },
+  {
+    id: 2,
+    title: "Advitiya Tech Fest",
+    img: "/Advitiya.png",
+    desc: "Built a responsive Website for our College's Tech Fest Advitiya along with a group of students",
+  },
+  {
+    id: 6,
+    title: "Gemini Clone",
+    img: "/gemini.png",
+    desc: "Built a frontend clone of Gemini's Official Website using React.js and used the official gemini api for fetching data",
+  },
+  {
+    id: 3,
     title: "Nike Commerce Website Using React",
     img: "/nikeapp.png",
     desc: "Built a Fully Responsive Frontend Clone of Nike's Official Website using React.js and tailwind css",
     link:"https://github.com/VedantBedi12/Nike-Clone-React",
   },
+  // {
+  //   id: 4,
+  //   title: "Facial-Emotion-Recognition",
+  //   img: "/emotion.jpeg",
+  //   desc: "Built a Facial Emotion Recognition Model using Convolutional Neural Networks and OpenCV",
+  //   link:"",
+  // },
   {
-    id: 2,
-    title: "Facial-Emotion-Recognition",
-    img: "/emotion.jpeg",
-    desc: "Built a Facial Emotion Recognition Model using Convolutional Neural Networks and OpenCV",
-    link:"",
-  },
-  {
-    id: 3,
+    id: 5,
     title: "Portfolio Website",
     img: "/portfolio.png",
     desc: "Built a Fully Responsive Portfolio Website using React.js and SCSS, including framer motion",
   },
-  {
-    id: 4,
-    title: "Gemini Clone",
-    img: "/gemini.png",
-    desc: "Built a frontend clone of Gemini's Official Website using React.js and used the official gemini api for fetching data",
-  },
+  
+
 
 
 ];
@@ -60,7 +74,7 @@ const Single = ({ item }) => {
   );
 };
 
-const Portfolio = () => {
+const Portfolio_P = () => {
   const ref = useRef();
 
   const { scrollYProgress } = useScroll({
@@ -76,7 +90,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>Projects</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (
@@ -86,4 +100,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Portfolio_P;
