@@ -51,7 +51,7 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-            {item.link && <a href={item.link} target="_blank"><button>See Demo</button></a>}
+            {item.link && <a href={item.link} target="_blank"><button>View Code</button></a>}
            {/* <a href = {item.link}><button>See Demo</button></a> */}
           </motion.div>
         </div>
@@ -76,7 +76,7 @@ const Portfolio_P = () => {
   return (
     <div className="portfolio" ref={ref}>
       <div className="progress">
-        <h1>Projects</h1>
+        <h1>Project Portfolio</h1>
         <motion.div style={{ scaleX }} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

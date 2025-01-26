@@ -36,7 +36,7 @@ const Services = () => {
       animate={"animate"}
     >
       <motion.div className="textContainer" variants={variants}>
-        <p>
+        <p className="quote">
           The walls between Art and Engineering exist only in our minds.
           <br /> ~ Theo Jansen
         </p>
@@ -101,6 +101,7 @@ const Services = () => {
         </div>
 
       </motion.div>
+      <p className="mob">View on Laptop Please</p>
     </motion.div>
   );
 };
