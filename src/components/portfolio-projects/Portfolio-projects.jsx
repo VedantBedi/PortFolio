@@ -4,47 +4,32 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const items = [
   {
-    id: 1,
-    title: "BoST Portal - Our College's Website for all things Tech",
-    img: "/Bost.png",
-    desc: "Built a responsive Website along with a team for our College's Board of Science of Technology",
-  },
-  {
-    id: 2,
-    title: "Advitiya Tech Fest",
-    img: "/Advitiya.png",
-    desc: "Built a responsive Website for our College's Tech Fest Advitiya along with a group of students",
-  },
-  {
     id: 6,
-    title: "Gemini Clone",
-    img: "/gemini.png",
-    desc: "Built a frontend clone of Gemini's Official Website using React.js and used the official gemini api for fetching data",
+    title: "Inter IIT - Deep fake detection and explanation generation",
+    img: "/interiit.png",
+    desc: "Built a pipeline for deepfake detection and Explanation Generation using VLM on 32 x 32 Images. Ranked 11 out of 23 IIT's",
+  },
+  {
+    id: 1,
+    title: "Flappy Bird with Reinforcement Learning",
+    img: "/flappy.png",
+    desc: "Built a Flappy Bird implementation from scratch using pygame, and implemented Deep Q learning",
+    link:"https://github.com/VedantBedi12/FlappyBird_RL",
   },
   {
     id: 3,
-    title: "Nike Commerce Website Using React",
-    img: "/nikeapp.png",
-    desc: "Built a Fully Responsive Frontend Clone of Nike's Official Website using React.js and tailwind css",
-    link:"https://github.com/VedantBedi12/Nike-Clone-React",
+    title: "Intelligent Surveillance System for BOST Room",
+    img: "/security.png",
+    desc: "Currently Working on a Intelligent Surveillance System for our Board of Science and Technology Room along with a group of freshers. In Progress - Anomaly Detection and Database Integration",
+    link:"https://github.com/VedantBedi12/Surveillance-System",
   },
-  // {
-  //   id: 4,
-  //   title: "Facial-Emotion-Recognition",
-  //   img: "/emotion.jpeg",
-  //   desc: "Built a Facial Emotion Recognition Model using Convolutional Neural Networks and OpenCV",
-  //   link:"",
-  // },
   {
-    id: 5,
-    title: "Portfolio Website",
-    img: "/portfolio.png",
-    desc: "Built a Fully Responsive Portfolio Website using React.js and SCSS, including framer motion",
-  },
-  
-
-
-
+      id: 4,
+      title: "Facial-Emotion-Recognition",
+      img: "/emotion.jpeg",
+      desc: "Built a Facial Emotion Recognition Model using Convolutional Neural Networks and OpenCV",
+      link:"https://github.com/VedantBedi12/Facial-Emotion-Recognition",
+    },
 ];
 
 const Single = ({ item }) => {
@@ -66,7 +51,8 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{y}}>
             <h2>{item.title}</h2>
             <p>{item.desc}</p>
-           <a href = {item.link}><button>See Demo</button></a>
+            {item.link && <a href={item.link} target="_blank"><button>See Demo</button></a>}
+           {/* <a href = {item.link}><button>See Demo</button></a> */}
           </motion.div>
         </div>
       </div>

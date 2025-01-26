@@ -15,9 +15,9 @@ const Parallax = ({ type }) => {
 
   let background, heading, planetsImage;
 
-  if (type === "services") {
+  if (type === "background") {
     background = "linear-gradient(180deg, #111132, #0c0c1d)";
-    heading = "Firstly, my Past";
+    heading = "My Past";
     planetsImage = "/planets.png";
   } else if (type == "portfolio") {
     background = "linear-gradient(180deg, #111132, #505064)";

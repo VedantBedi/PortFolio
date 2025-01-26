@@ -27,20 +27,24 @@ const Contact = () => {
   const isInView = useInView(ref, { margin: "-100px" });
 
   const sendEmail = (e) => {
-    e.preventDefault();
-
+    e.preventDefault(); // Prevent the default behavior
+    console.log("sendEmail triggered"); // Debug statement
+    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+  
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {
-          setSuccess(true)
+          console.log("Email sent successfully", result.text);
+          setSuccess(true);
         },
         (error) => {
+          console.error("Error sending email", error);
           setError(true);
         }
       );
@@ -111,9 +115,9 @@ const Contact = () => {
           <input type="text" required placeholder="Name" name="name"/>
           <input type="email" required placeholder="Email" name="email"/>
           <textarea rows={8} placeholder="Message" name="message"/>
-          <button>Submit</button>
-          {error && "Error"}
-          {success && "Success"}
+          <button type = "submit">Submit</button>
+          {error && <p className="error">Error sending message. Please try again.</p>}
+          {success && <p className="success">Message sent successfully!</p>}
         </motion.form>
       </div>
     </motion.div>

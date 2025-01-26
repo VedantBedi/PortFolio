@@ -18,15 +18,6 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
-        <Parallax type="services" />
-      </section>
-      <section>
-        <Servicese />
-      </section>
-      <section>
-        <Servicess />
-      </section>
       <section id="Portfolio_P">
         <Parallax type="portfolio_p" />
       </section>
@@ -35,9 +26,18 @@ const App = () => {
         <Parallax type="portfolio" />
       </section>
       <Portfolio />
-      <section id="Contact">
-        <Contact />
+      <section id="Background">
+        <Parallax type="background" />
       </section>
+      <section>
+        <Servicese />
+      </section>
+      <section>
+        <Servicess />
+      </section>
+      {/* <section id="Contact">
+        <Contact />
+      </section> */}
     </div>
   );
 };
