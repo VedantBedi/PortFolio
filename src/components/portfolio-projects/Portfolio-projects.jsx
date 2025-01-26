@@ -18,7 +18,7 @@ const items = [
   },
   {
     id: 3,
-    title: "Intelligent Surveillance System for BOST Room",
+    title: "Intelligent Surveillance System for BOST",
     img: "/security.png",
     desc: "Currently Working on a Intelligent Surveillance System for our Board of Science and Technology Room along with a group of freshers. In Progress - Anomaly Detection and Database Integration",
     link:"https://github.com/VedantBedi12/Surveillance-System",
